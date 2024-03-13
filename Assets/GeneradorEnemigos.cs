@@ -21,7 +21,7 @@ public class GeneradorEnemigos : MonoBehaviour
 
         for (int i = 0; i < groupCount; i++)
         {
-            Vector3 groupPosition = new Vector3(Random.Range(-halfWidth, halfWidth), 12f, Random.Range(-halfLength, halfLength)); // Posición aleatoria en el plano
+            Vector3 groupPosition = new Vector3(Random.Range(-halfWidth, halfWidth), 8f, Random.Range(-halfLength, halfLength)); // Posición aleatoria en el plano
             GenerateGroup(groupPosition);
         }
     }

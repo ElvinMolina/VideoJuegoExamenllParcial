@@ -9,6 +9,11 @@ public class PlayerController : MonoBehaviour
     public LayerMask layerMask;
     public bool grounded;
 
+    public int distanciaMetrosActivacion = 15;
+    public int velocidadCorriendo = 3;
+    public float distanciaAtaque = 1.3f;
+    public float multiplicadorDanio = 1.0f;
+
     // NPC
     public int rutina;
     public float cronometro;
@@ -50,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void Comportamiento()
     {
-        if (Vector3.Distance(transform.position, target.transform.position) > 10)
+        if (Vector3.Distance(transform.position, target.transform.position) > distanciaMetrosActivacion)
         {
             anim.SetBool("Run", false);
             CaminarPorElMapa();
@@ -95,7 +100,7 @@ public class PlayerController : MonoBehaviour
     private void SeguirAPersonaje()
     {
         distancia = Vector3.Distance(transform.position, target.transform.position);
-        bool estaSoloPersiguiendo = distancia > 1.3 && !atacando;
+        bool estaSoloPersiguiendo = distancia > distanciaAtaque && !atacando;
 
         if (estaSoloPersiguiendo)
         {
@@ -108,7 +113,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("Run", true);
 
             // x3 Velocidad corriendo
-            transform.Translate(Vector3.forward * 3 * Time.deltaTime);
+            transform.Translate(Vector3.forward * velocidadCorriendo * Time.deltaTime);
 
             anim.SetBool("Attack", false);
         }
