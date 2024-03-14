@@ -6,6 +6,7 @@ TagManager:
   tags:
   - golpeImpacto
   - GolpeImpactoEnemigo
+  - ContactoFinal
   layers:
   - Default
   - TransparentFX
