@@ -64,8 +64,8 @@ public class PlayerSoldado : MonoBehaviour
             atacando = true;
         }
 
-        anim.SetFloat("VelX", x);
-        anim.SetFloat("VelY", y);
+        //anim.SetFloat("VelX", x);
+        //anim.SetFloat("VelY", y);
 
 
         if(puedoSaltar)

@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
     public GameObject target;
     public bool atacando;
 
+    public bool capturarMovimiento;
+    public bool esSoldado;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,16 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        Grounded();
+        if (!esSoldado)
+            Comportamiento();
+        //Jump();
+        if (capturarMovimiento)
+            Move();
+    }
+
+    private void Comportamiento()
     {
         if (atacando)
         {
@@ -47,14 +60,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        Grounded();
-        Comportamiento();
-        //Jump();
-        //Move();
-    }
-
-    private void Comportamiento()
-    {
         if (Vector3.Distance(transform.position, target.transform.position) > distanciaMetrosActivacion)
         {
             anim.SetBool("Run", false);
@@ -93,7 +98,9 @@ public class PlayerController : MonoBehaviour
         movement.Normalize();
 
         this.transform.position += movement * 0.04f;
+        this.anim.SetFloat("VelY", verticalAxis);
         this.anim.SetFloat("Vertical", verticalAxis);
+        this.anim.SetFloat("VelX", horizontalAxis);
         this.anim.SetFloat("Horizontal", horizontalAxis);
     }
 
