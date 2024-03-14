@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44997752, g: 0.49737632, b: 0.56125534, a: 1}
+  m_IndirectSpecularColor: {r: 0.4499784, g: 0.49737686, b: 0.56125623, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4288,7 +4288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753880177}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18558183, y: 0.4286969, z: -0.090454176, w: 0.8795433}
+  m_LocalRotation: {x: 0.18558183, y: 0.4286969, z: -0.09045416, w: 0.8795433}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5704,6 +5704,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &986944694
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986944686}
+  m_Material: {fileID: 13400000, guid: c4c38d19aae2617418365331bd2f6182, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1587632022319021766, guid: 044f168ddb44f4ac7998aa8866a203ad, type: 3}
 --- !u!1001 &990148582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7623,6 +7645,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2034155048744185219, guid: 07226bdad6ac4498d840db4be444c5fa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 986944691}
+    - targetCorrespondingSourceObject: {fileID: 2034155048744185219, guid: 07226bdad6ac4498d840db4be444c5fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 986944694}
   m_SourcePrefab: {fileID: 100100000, guid: 07226bdad6ac4498d840db4be444c5fa, type: 3}
 --- !u!1001 &1543419291
 PrefabInstance:
@@ -7879,7 +7904,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617733686}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18558188, y: 0.4286969, z: -0.090454176, w: 0.8795433}
+  m_LocalRotation: {x: 0.18558186, y: 0.4286969, z: -0.09045417, w: 0.8795433}
   m_LocalPosition: {x: -70.45831, y: 22.85, z: 96.21302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
