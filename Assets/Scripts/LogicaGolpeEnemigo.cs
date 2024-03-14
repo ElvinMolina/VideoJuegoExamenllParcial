@@ -28,7 +28,7 @@ public class LogicaGolpeEnemigo : MonoBehaviour
     {
         if (hpText != null)
         {
-            hpText.text = "Vida: " + hpMax.ToString()+" %  / Vidas Restantes: " + cantvidas.ToString(); // Actualiza el texto con las vidas restantes
+            hpText.text = "Daño: " + hpMax.ToString()+" %  / Vidas Restantes: " + cantvidas.ToString(); // Actualiza el texto con las vidas restantes
         }
     }
 
