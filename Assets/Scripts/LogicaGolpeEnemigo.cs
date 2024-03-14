@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class LogicaGolpeEnemigo : MonoBehaviour
 {
     public int hpMax; // Vidas máximas
@@ -63,7 +64,7 @@ public class LogicaGolpeEnemigo : MonoBehaviour
         cantvidas--; // Incrementa el contador de vidas perdidas
         if (cantvidas == 0)
         {
-           // SceneManager.LoadScene("MENU"); // ponga como se llama la escena aquí, el menú que hiciste
+            SceneManager.LoadScene("MainMenu"); // ponga como se llama la escena aquí, el menú que hiciste
         }
         else
         {
