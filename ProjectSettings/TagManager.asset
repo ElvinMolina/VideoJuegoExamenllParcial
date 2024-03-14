@@ -6,6 +6,8 @@ TagManager:
   tags:
   - golpeImpacto
   - GolpeImpactoEnemigo
+  - ContactoFinal
+  - TomarVelocidad
   layers:
   - Default
   - TransparentFX
